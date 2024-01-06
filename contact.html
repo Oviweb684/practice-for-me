@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact form</title>
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <header>
-        
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="index.html" target="_blank">Blog</a></li>
+                <li><a href="index.html" target="_blank">Contact</a></li>
+                
+            </ul>
+        </nav>
+
     </header>
     <main>
         <section>
@@ -19,6 +28,25 @@
                 <label for="email">Your email:
                     <input id="email" type="email" placeholder="Your email">
                 </label>
+                <fieldset>
+                    <legend>
+                        Pick one
+                    </legend>
+                    <label for="book"><input type="radio" name="ingredients">Book</label>
+                    <label for="pen"><input type="radio" name="ingredients">Pen</label>
+                    <label for="khata"><input type="radio" name="ingredients">Khata</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pick Favorites</legend>
+                    <label for="book"><input type="checkbox" name="ingredients">Book</label>
+                    <label for="pen"><input type="checkbox" name="ingredients" >pen </label>
+                    <label for="Khata"><input type="checkbox" name="ingredients">Khata</label>
+                </fieldset>
+                <fieldset><legend>Your message</legend>
+                <textarea name="Khata" id="" cols="50" rows="2"></textarea>
+                
+                </fieldset>
+                <input type="reset">
             </form>
         </section>
     </main>
